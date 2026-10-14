@@ -27,4 +27,43 @@ fun main() {
     val genre: Char = 'M'
     // Boolean
     val isAdmin: Boolean = false
+
+
+    // Arithmetic, comparative and logic operators
+    val firstNumber: Int = 8
+    val secondNumber: Int = 2
+
+    println("PLUS")
+    println(message = firstNumber + secondNumber)
+
+    println("SUBTRACT")
+    println(message = firstNumber - secondNumber)
+
+    println("MULTIPLY")
+    println(message = firstNumber * secondNumber)
+
+    println("DIVIDE")
+    println(message = firstNumber / secondNumber)
+
+
+    /*
+    * != (different to)
+    * == (equals to)
+    * > (greater than)
+    * >= (greater or equal than)
+    * < (less than)
+    * <= (less or equal than)
+    */
+    val momAge: Int = 55
+    val dadAge: Int = 38
+    val momAgeIsOlderThanDad: Boolean = momAge > dadAge
+    println("Mom is older than dad: $momAgeIsOlderThanDad")
+
+    /*
+    * && (and)
+    * || (or)
+    * ! (opposite)
+    */
+    val momIsOlderThanDadAndMe: Boolean = momAgeIsOlderThanDad && momAge > age
+    println("Mom is older than dad and me: $momIsOlderThanDadAndMe")
 }
