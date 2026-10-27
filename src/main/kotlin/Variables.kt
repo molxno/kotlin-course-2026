@@ -66,4 +66,20 @@ fun main() {
     */
     val momIsOlderThanDadAndMe: Boolean = momAgeIsOlderThanDad && momAge > age
     println("Mom is older than dad and me: $momIsOlderThanDadAndMe")
+
+    /*
+    * Good practices with variable names
+    */
+
+    // is: state
+    val isActive = true
+
+    // has: possession
+    val hasDiscount = false
+
+    // can: can do something
+    val canViewList = true
+
+    // should: should do something
+    val shouldApplyUpdate = false
 }
