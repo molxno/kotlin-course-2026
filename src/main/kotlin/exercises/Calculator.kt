@@ -10,18 +10,18 @@ package org.example.exercises
  * - taxes: The taxes of the product
  */
 fun main() {
-    val productName = "Leche Klim"
-    val productPrice = 23400.0
-    val quantity = 2
-    val discountRate = 0.1
-    val taxRate = 0.05
+    val productName: String = "Leche Klim"
+    val productPrice: Double = 23400.0
+    val quantity: Int = 2
+    val discountRate: Double = 0.1
+    val taxRate: Double = 0.05
 
-    val subtotal = productPrice * quantity
-    val discountAmount = subtotal * discountRate
-    val subtotalWithDiscount = subtotal - discountAmount
+    val subtotal: Double = productPrice * quantity
+    val discountAmount: Double = subtotal * discountRate
+    val subtotalWithDiscount: Double = subtotal - discountAmount
 
-    val taxAmount = subtotalWithDiscount * taxRate
-    val total = subtotalWithDiscount + taxAmount
+    val taxAmount: Double = subtotalWithDiscount * taxRate
+    val total: Double = subtotalWithDiscount + taxAmount
 
     println("Name: $productName")
     println("Price: $$productPrice")
