@@ -9,27 +9,31 @@ package org.example.exercises
  * - discount: The discount of the product
  * - taxes: The taxes of the product
  */
+
+const val TAX_RATE = 0.05
+const val PERCENTAGE_BASE = 100
+
 fun main() {
     val productName: String = "Leche Klim"
     val productPrice: Double = 23400.0
     val quantity: Int = 2
     val discountRate: Double = 0.1
-    val taxRate: Double = 0.05
+    // val taxRate: Double = 0.05
 
     val subtotal: Double = productPrice * quantity
     val discountAmount: Double = subtotal * discountRate
     val subtotalWithDiscount: Double = subtotal - discountAmount
 
-    val taxAmount: Double = subtotalWithDiscount * taxRate
+    val taxAmount: Double = subtotalWithDiscount * TAX_RATE
     val total: Double = subtotalWithDiscount + taxAmount
 
     println("Name: $productName")
     println("Price: $$productPrice")
     println("Quantity: $quantity")
-    println("Discount: ${discountRate * 100}% (-$$discountAmount)")
+    println("Discount: ${discountRate * PERCENTAGE_BASE}% (-$$discountAmount)")
     println()
     println("Subtotal (after discount): $$subtotalWithDiscount")
-    println("Tax (${taxRate * 100}%): $$taxAmount")
+    println("Tax (${TAX_RATE * PERCENTAGE_BASE}%): $$taxAmount")
     println()
     println("Total: $$total")
 }
