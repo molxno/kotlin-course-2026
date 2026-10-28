@@ -24,4 +24,24 @@ fun main() {
 
     println("Permission 1: $permission")
     println("Permission 2: $permission2")
+
+    val level = 8
+    when {
+        level > 0 && level <= 3 -> print("Noob")
+        level > 3 && level <= 5 -> print("Beginner")
+        level > 5 && level <= 8 -> print("Intermediate")
+        level > 8 -> print("El nene")
+        else -> print("no level")
+    }
+
+    val myRange: IntRange = 0..10
+
+    when(level) {
+        !in -100..0 -> print("")
+        in 0..3 -> print("Noob")
+        in 3..5 -> print("Beginner")
+        in 5..8 -> print("Intermediate")
+        in 8..9 -> print("El nene")
+        else -> print("no level")
+    }
 }
