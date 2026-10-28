@@ -30,4 +30,15 @@ fun main() {
     } else {
         println("Is a dev")
     }
+
+    val genre = "male"
+
+    // var or val as a condition expression
+    val greeting = if (genre == "male") {
+        "Hey mate"
+    } else {
+        "Hello lady"
+    }
+
+    println(greeting)
 }
